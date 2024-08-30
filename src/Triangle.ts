@@ -53,7 +53,14 @@ export class Triangle extends Shape {
     this.sideA = sideA;
     this.sideB = sideB;
     this.sideC = sideC;
-    this.dispatchEvent(new CustomEvent('resize', { detail: { sideA, sideB, sideC } }));
+    this.dispatchEvent(new CustomEvent('resize', {
+      detail: {
+        sides: [this.sideA, this.sideB, this.sideC],
+        area: this.getArea(),
+        getPerimeter: this.getPerimeter(),
+
+      }
+    }));
   }
 
   /**

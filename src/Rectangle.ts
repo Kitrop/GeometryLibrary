@@ -45,7 +45,14 @@ export class Rectangle extends Shape {
     this.validateInput(width, height);
     this.width = width;
     this.height = height;
-    this.dispatchEvent(new CustomEvent('resize', { detail: { width, height } }));
+    this.dispatchEvent(new CustomEvent('resize', {
+      detail: {
+        width: this.width,
+        height: this.height,
+        area: this.getArea(),
+        getPerimeter: this.getPerimeter(),
+      }
+    }));
   }
 
   /**

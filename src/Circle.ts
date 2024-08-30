@@ -41,7 +41,13 @@ export class Circle extends Shape {
   public setRadius(radius: number): void {
     this.validateInput(radius);
     this.radius = radius;
-    this.dispatchEvent(new CustomEvent('radiusChange', { detail: { radius } }));
+    this.dispatchEvent(new CustomEvent('radiusChange', {
+      detail: {
+        radius: radius,
+        area: this.getArea(),
+        perimeter: this.getPerimeter(),
+      }
+    }));
   }
 
   /**
