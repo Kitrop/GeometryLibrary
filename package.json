@@ -1,0 +1,25 @@
+{
+  "name": "geometry-library",
+  "version": "1.0.0",
+  "description": "Библиотека для работы с геометрическими фигурами",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com"
+  },
+  "keywords": [
+    "typescript",
+    "geometry",
+    "shapes",
+    "library"
+  ],
+  "author": "Evgeniy Shabolin",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  }
+}
