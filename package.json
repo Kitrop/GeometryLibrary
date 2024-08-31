@@ -1,6 +1,6 @@
 {
   "name": "tz_geometric_shapes_shabolin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Библиотека для работы с геометрическими фигурами",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
