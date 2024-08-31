@@ -17,7 +17,7 @@ npm install
 **Работа с треугольниками:**
 
 ```ts
-import { Triangle } from 'Triangle';
+import {Triangle} from 'tz_geometric_shapes_shabolin/lib/Triangle';
 
 // Создаем треугольник со сторонами 3, 4, 5
 const triangle = new Triangle(3, 4, 5);
@@ -33,7 +33,7 @@ console.log('Новая площадь треугольника:', triangle.getA
 **Работа с прямоугольниками:**
 
 ```ts
-import { Rectangle } from 'Rectangle';
+import { Rectangle } from 'tz_geometric_shapes_shabolin/lib/Rectangle';
 
 // Создаем прямоугольник с шириной 5 и высотой 10
 const rectangle = new Rectangle(5, 10);
@@ -45,28 +45,11 @@ console.log('Периметр прямоугольника:', rectangle.getPerim
 rectangle.resize(8, 12);
 console.log('Новая площадь прямоугольника:', rectangle.getArea());
 ```
-
-**Работа с прямоугольниками:**
-
-```ts
-import { Rectangle } from 'Rectangle';
-
-// Создаем прямоугольник с шириной 5 и высотой 10
-const rectangle = new Rectangle(5, 10);
-
-console.log('Площадь прямоугольника:', rectangle.getArea());
-console.log('Периметр прямоугольника:', rectangle.getPerimeter());
-
-// Изменение размеров прямоугольника
-rectangle.resize(8, 12);
-console.log('Новая площадь прямоугольника:', rectangle.getArea());
-```
-
 
 **Работа с кругами:**
 
 ```ts
-import { Circle } from 'Circle';
+import { Circle } from 'tz_geometric_shapes_shabolin/lib/Circle';
 
 // Создаем круг с радиусом 7
 const circle = new Circle(7);
